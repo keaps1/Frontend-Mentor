@@ -48,6 +48,7 @@ body {
         /*background-color: yellowgreen;*/
         width: 333px;
         height: 586px;
+        justify-content: space-around;
     }
 }
 
@@ -60,7 +61,7 @@ img {
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 100;
     font-size: 28px;
 }
 
@@ -112,7 +113,7 @@ button {
         height: 46px;
     }
     img {
-        width: 106px; height: 106px;
+        width: 94px; height: 94px;
         
     }
 }
