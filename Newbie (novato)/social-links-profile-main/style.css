@@ -38,7 +38,7 @@ body {
     width: 466px;
     height: 820px;
     display: flex;
-    flex-direction: column; align-items: center; justify-content: center;
+    flex-direction: column; align-items: center; justify-content: space-evenly;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.349);
     position: relative;
 }
@@ -52,37 +52,45 @@ body {
     } 
 }
 
- @media (min-width: 421px) and (max-width: 768px) {
+ @media (min-width: 421px) and (max-width: 767px) {
         .card {
             /*background-color: yellowgreen;*/
-            width: 400px;
-            height: 703px;
+            width: 383px;
+            height: 673px;
             justify-content: space-around;
+        .links {
+            margin: 40px 0;
+        }
+        img {
+            width: 100px; height: 100px;
+        }
     }
 }
 
 /* Elementos Cartão */
 
 img {
-    width: 146px; height: 146px;
+    width: 130px; height: 130px;
     border-radius: 50%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 h1 {
     font-weight: 100;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 h2 {
     color: var(--cor01);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
+    padding-bottom: 5px;
 }
 
 p {
+    margin: 10px;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 18px;
 }
 
     /* div.links */
@@ -101,7 +109,7 @@ button {
     border: none;
     color: white;
     background-color: var(--cor03);
-    width: 100%; height: 50px;
+    width: 100%; height: 55px;
     border-radius: 7px;
     margin: 8px 0;
     font-weight: 700;
@@ -112,6 +120,9 @@ button {
     &:hover {
         background-color: var(--cor01);
         color: black;
+    }
+    &:nth-child(5) {
+        margin-bottom: 0;
     }
 }
 
@@ -127,6 +138,7 @@ button {
     }
     img {
         width: 94px; height: 94px;
+        margin-top: 15px;
         
     }
 }
@@ -135,7 +147,7 @@ button {
 /* Rodapé */
 
 .attribution { 
-    margin-top: 12px;
+    margin-top: 15px;
     font-size: 11px; 
     text-align: center;
 }
